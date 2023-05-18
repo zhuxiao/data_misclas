@@ -1,0 +1,531 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [NC_000913.3]
+	Total Regions: 1
+	Total Region Length: 4641652
+Analyzing contigs...
+CONTIG: scaffold_0 (413870bp)
+Best alignment score: 269697.0 (LEN: 269697, IDY: 100.00), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			The best set is below. Score: 413191.2, number of alignments: 3, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 8 between Alignment 1 and 2: 1979271 2066294 | 86998 1 | 87024 86998 --> 1979279 2066294 | 86990 1 | 87016 86990
+			Real Alignment 1: 1979279 2066294 | 86990 1 | 87016 86990 | 99.97 | NC_000913.3 scaffold_0
+			  Extensive misassembly (relocation, inconsistency = 776) between these two alignments
+			Excluding internal overlap of size 263 between Alignment 2 and 3: 1651431 1708876 | 413870 356425 | 57446 57446 --> 1651431 1708613 | 413870 356688 | 57183 57183
+			Real Alignment 2: 1708806 1978502 | 356687 86991 | 269697 269697 | 100.0 | NC_000913.3 scaffold_0
+			  Extensive misassembly (relocation, inconsistency = 192) between these two alignments
+			Real Alignment 3: 1651431 1708613 | 413870 356688 | 57183 57183 | 99.97 | NC_000913.3 scaffold_0
+
+CONTIG: scaffold_1 (217429bp)
+Best alignment score: 129271.0 (LEN: 129271, IDY: 100.00), Total number of alignments: 5
+			Looking for the best set of alignments (out of 5 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 2268786 2268898 | 1 113 | 113 113 | 100.0 | NC_000913.3 scaffold_1
+		Skipping redundant alignment 2818046 2818136 | 39632 39722 | 91 91 | 96.7 | NC_000913.3 scaffold_1
+		This contig has several significant sets of alignments. [An ambiguously mapped contig]
+		Using only the very best set (option --ambiguity-usage is set to "one").
+			The best set is below. Score: 216687.1, number of alignments: 3, unaligned bases: 112
+		This contig is misassembled.
+			Excluding internal overlap of size 161 between Alignment 1 and 2: 2778802 2818216 | 113 39529 | 39415 39417 --> 2778802 2818057 | 113 39368 | 39256 39256
+			Real Alignment 1: 2778802 2818057 | 113 39368 | 39256 39256 | 99.98 | NC_000913.3 scaffold_1
+			  Extensive misassembly (relocation, inconsistency = 139) between these two alignments
+			Excluding internal overlap of size 83 between Alignment 2 and 3: 2947605 2996477 | 168557 217429 | 48873 48873 --> 2947688 2996477 | 168640 217429 | 48790 48790
+			Real Alignment 2: 2818197 2947467 | 39369 168639 | 129271 129271 | 100.0 | NC_000913.3 scaffold_1
+			  Extensive misassembly (relocation, inconsistency = 220) between these two alignments
+			Real Alignment 3: 2947688 2996477 | 168640 217429 | 48790 48790 | 100.0 | NC_000913.3 scaffold_1
+
+CONTIG: scaffold_2 (203138bp)
+Best alignment score: 203138.0 (LEN: 203138, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 20446 223583 | 1 203138 | 203138 203138 | 100.0 | NC_000913.3 scaffold_2
+
+CONTIG: scaffold_3 (223979bp)
+Best alignment score: 209462.2 (LEN: 209546, IDY: 99.96), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 223485.6, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 299 between Alignment 1 and 2: 2289995 2304726 | 223979 209248 | 14732 14732 --> 2289995 2304427 | 223979 209547 | 14433 14433
+			Real Alignment 1: 2304767 2514391 | 209546 1 | 209625 209546 | 99.96 | NC_000913.3 scaffold_3
+			  Extensive misassembly (relocation, inconsistency = 339) between these two alignments
+			Real Alignment 2: 2289995 2304427 | 223979 209547 | 14433 14433 | 99.93 | NC_000913.3 scaffold_3
+
+CONTIG: scaffold_4 (174212bp)
+Best alignment score: 174212.0 (LEN: 174212, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3767349 3941560 | 174212 1 | 174212 174212 | 100.0 | NC_000913.3 scaffold_4
+
+CONTIG: scaffold_5 (170210bp)
+Best alignment score: 95465.0 (LEN: 95465, IDY: 100.00), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			The best set is below. Score: 169468.8, number of alignments: 3, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 4 between Alignment 1 and 2: 1270155 1299498 | 124805 95462 | 29344 29344 --> 1270155 1299494 | 124805 95466 | 29340 29340
+			Real Alignment 1: 1300694 1396158 | 95465 1 | 95465 95465 | 100.0 | NC_000913.3 scaffold_5
+			  Extensive misassembly (relocation, inconsistency = 1199) between these two alignments
+			Excluding internal overlap of size 460 between Alignment 2 and 3: 1270155 1299494 | 124805 95466 | 29340 29340 --> 1270615 1299494 | 124345 95466 | 28880 28880
+			Real Alignment 2: 1270615 1299494 | 124345 95466 | 28880 28880 | 100.0 | NC_000913.3 scaffold_5
+			  Extensive misassembly (relocation, inconsistency = 1069) between these two alignments
+			Real Alignment 3: 1223680 1269545 | 170210 124346 | 45866 45865 | 99.98 | NC_000913.3 scaffold_5
+
+CONTIG: scaffold_6 (264285bp)
+Best alignment score: 85661.0 (LEN: 85661, IDY: 100.00), Total number of alignments: 4
+			Looking for the best set of alignments (out of 4 total alignments)
+			The best set is below. Score: 263117.7, number of alignments: 4, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 190 between Alignment 1 and 2: 4326105 4392549 | 151931 85472 | 66445 66460 --> 4326105 4392359 | 151931 85662 | 66255 66270
+			Real Alignment 1: 4392472 4478131 | 85661 1 | 85660 85661 | 100.0 | NC_000913.3 scaffold_6
+			  Extensive misassembly (relocation, inconsistency = 112) between these two alignments
+			Excluding internal overlap of size 274 between Alignment 2 and 3: 4296279 4326063 | 181459 151658 | 29785 29802 --> 4296279 4325804 | 181459 151932 | 29526 29528
+			Real Alignment 2: 4326105 4392359 | 151931 85662 | 66255 66270 | 99.97 | NC_000913.3 scaffold_6
+			  Extensive misassembly (relocation, inconsistency = 300) between these two alignments
+			Excluding internal overlap of size 157 between Alignment 3 and 4: 4296279 4325804 | 181459 151932 | 29526 29528 --> 4296434 4325804 | 181302 151932 | 29371 29371
+			Real Alignment 3: 4296434 4325804 | 181302 151932 | 29371 29371 | 99.93 | NC_000913.3 scaffold_6
+			  Extensive misassembly (relocation, inconsistency = 337) between these two alignments
+			Real Alignment 4: 4213046 4296096 | 264285 181303 | 83051 82983 | 99.92 | NC_000913.3 scaffold_6
+
+CONTIG: scaffold_7 (210549bp)
+Best alignment score: 210422.7 (LEN: 210549, IDY: 99.94), Total number of alignments: 1
+		One align captures most of this contig: 2515500 2726180 | 210549 1 | 210681 210549 | 99.94 | NC_000913.3 scaffold_7
+
+CONTIG: scaffold_8 (132684bp)
+Best alignment score: 132684.0 (LEN: 132684, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 2997576 3130259 | 132684 1 | 132684 132684 | 100.0 | NC_000913.3 scaffold_8
+
+CONTIG: scaffold_9 (130708bp)
+Best alignment score: 82704.0 (LEN: 82704, IDY: 100.00), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 130392.5, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 131 between Alignment 1 and 2: 3270108 3318242 | 48135 1 | 48135 48135 --> 3270239 3318242 | 48004 1 | 48004 48004
+			Real Alignment 1: 3270239 3318242 | 48004 1 | 48004 48004 | 100.0 | NC_000913.3 scaffold_9
+			  Extensive misassembly (relocation, inconsistency = 226) between these two alignments
+			Real Alignment 2: 3187309 3270012 | 130708 48005 | 82704 82704 | 100.0 | NC_000913.3 scaffold_9
+
+CONTIG: scaffold_10 (125691bp)
+Best alignment score: 125691.0 (LEN: 125691, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 4040727 4166417 | 1 125691 | 125691 125691 | 100.0 | NC_000913.3 scaffold_10
+
+CONTIG: scaffold_11 (268073bp)
+Best alignment score: 267901.4 (LEN: 267955, IDY: 99.98), Total number of alignments: 2
+		Skipping these alignments as insignificant (option --ambiguity-score is set to "0.99"):
+			Skipping alignment 1096126 1096244 | 1 119 | 119 119 | 100.0 | NC_000913.3 scaffold_11
+		One align captures most of this contig: 781726 1049738 | 268073 119 | 268013 267955 | 99.98 | NC_000913.3 scaffold_11
+
+CONTIG: scaffold_12 (115794bp)
+Best alignment score: 115794.0 (LEN: 115794, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 392854 508647 | 115794 1 | 115794 115794 | 100.0 | NC_000913.3 scaffold_12
+
+CONTIG: scaffold_13 (112261bp)
+Best alignment score: 112261.0 (LEN: 112261, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3471286 3583545 | 1 112261 | 112260 112261 | 100.0 | NC_000913.3 scaffold_13
+
+CONTIG: scaffold_14 (99889bp)
+Best alignment score: 99024.3 (LEN: 99054, IDY: 99.97), Total number of alignments: 2
+		Skipping these alignments as insignificant (option --ambiguity-score is set to "0.99"):
+			Skipping alignment 1096126 1097221 | 1 1096 | 1096 1096 | 99.82 | NC_000913.3 scaffold_14
+		One align captures most of this contig: 1097323 1196351 | 836 99889 | 99029 99054 | 99.97 | NC_000913.3 scaffold_14
+
+CONTIG: scaffold_15 (97611bp)
+Best alignment score: 97604.0 (LEN: 97604, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 4508563 4606166 | 97611 8 | 97604 97604 | 100.0 | NC_000913.3 scaffold_15
+
+CONTIG: scaffold_16 (95164bp)
+Best alignment score: 95164.0 (LEN: 95164, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3667219 3762382 | 95164 1 | 95164 95164 | 100.0 | NC_000913.3 scaffold_16
+
+CONTIG: scaffold_17 (88453bp)
+Best alignment score: 88453.0 (LEN: 88453, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3946831 4035283 | 88453 1 | 88453 88453 | 100.0 | NC_000913.3 scaffold_17
+
+CONTIG: scaffold_18 (78732bp)
+Best alignment score: 78732.0 (LEN: 78732, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 609233 687964 | 78732 1 | 78732 78732 | 100.0 | NC_000913.3 scaffold_18
+
+CONTIG: scaffold_19 (67458bp)
+Best alignment score: 67458.0 (LEN: 67458, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 2102830 2170287 | 67458 1 | 67458 67458 | 100.0 | NC_000913.3 scaffold_19
+
+CONTIG: scaffold_20 (65012bp)
+Best alignment score: 65012.0 (LEN: 65012, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 316365 381376 | 65012 1 | 65012 65012 | 100.0 | NC_000913.3 scaffold_20
+
+CONTIG: scaffold_21 (60660bp)
+Best alignment score: 46252.0 (LEN: 46252, IDY: 100.00), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 60410.0, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 1618246 1632653 | 14408 1 | 14408 14408 | 100.0 | NC_000913.3 scaffold_21
+			  Extensive misassembly (relocation, inconsistency = 310) between these two alignments
+			Real Alignment 2: 1571684 1617935 | 60660 14409 | 46252 46252 | 100.0 | NC_000913.3 scaffold_21
+
+CONTIG: scaffold_22 (59781bp)
+Best alignment score: 59781.0 (LEN: 59781, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 2229254 2289034 | 59781 1 | 59781 59781 | 100.0 | NC_000913.3 scaffold_22
+
+CONTIG: scaffold_23 (57941bp)
+Best alignment score: 57941.0 (LEN: 57941, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 2171310 2229252 | 1 57941 | 57943 57941 | 100.0 | NC_000913.3 scaffold_23
+
+CONTIG: scaffold_24 (57588bp)
+Best alignment score: 57588.0 (LEN: 57588, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 1470398 1527985 | 57588 1 | 57588 57588 | 100.0 | NC_000913.3 scaffold_24
+
+CONTIG: scaffold_25 (57144bp)
+Best alignment score: 57144.0 (LEN: 57144, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3366637 3423780 | 57144 1 | 57144 57144 | 100.0 | NC_000913.3 scaffold_25
+
+CONTIG: scaffold_26 (54986bp)
+Best alignment score: 54986.0 (LEN: 54986, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3131228 3186213 | 1 54986 | 54986 54986 | 100.0 | NC_000913.3 scaffold_26
+
+CONTIG: scaffold_27 (50844bp)
+Best alignment score: 35339.0 (LEN: 35339, IDY: 100.00), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 50844.0, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 4606314 4641652 | 1 35339 | 35339 35339 | 100.0 | NC_000913.3 scaffold_27
+			  Not a misassembly [linear representation of circular genome] between these two alignments
+			Real Alignment 2: 1 15505 | 35340 50844 | 15505 15505 | 100.0 | NC_000913.3 scaffold_27
+
+CONTIG: scaffold_28 (47427bp)
+Best alignment score: 47427.0 (LEN: 47427, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3318244 3365670 | 47427 1 | 47427 47427 | 100.0 | NC_000913.3 scaffold_28
+
+CONTIG: scaffold_29 (43932bp)
+Best alignment score: 43932.0 (LEN: 43932, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 1050431 1094362 | 43932 1 | 43932 43932 | 100.0 | NC_000913.3 scaffold_29
+
+CONTIG: scaffold_30 (42854bp)
+Best alignment score: 42854.0 (LEN: 42854, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 738830 781683 | 1 42854 | 42854 42854 | 100.0 | NC_000913.3 scaffold_30
+
+CONTIG: scaffold_31 (41407bp)
+Best alignment score: 41407.0 (LEN: 41407, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3428876 3470282 | 1 41407 | 41407 41407 | 100.0 | NC_000913.3 scaffold_31
+
+CONTIG: scaffold_32 (40426bp)
+Best alignment score: 32717.0 (LEN: 32717, IDY: 100.00), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 696542 696830 | 32929 32641 | 289 289 | 100.0 | NC_000913.3 scaffold_32
+		This contig has several significant sets of alignments. [An ambiguously mapped contig]
+		Using only the very best set (option --ambiguity-usage is set to "one").
+			The best set is below. Score: 40041.0, number of alignments: 2, unaligned bases: 135
+		This contig is misassembled.
+			Real Alignment 1: 696863 729579 | 32717 1 | 32717 32717 | 100.0 | NC_000913.3 scaffold_32
+			  Extensive misassembly (relocation, inconsistency = 221) between these two alignments
+			Real Alignment 2: 688933 696506 | 40426 32853 | 7574 7574 | 100.0 | NC_000913.3 scaffold_32
+
+CONTIG: scaffold_33 (40288bp)
+Best alignment score: 40288.0 (LEN: 40288, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 526602 566889 | 1 40288 | 40288 40288 | 100.0 | NC_000913.3 scaffold_33
+
+CONTIG: scaffold_34 (35311bp)
+Best alignment score: 35311.0 (LEN: 35311, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3584081 3619391 | 35311 1 | 35311 35311 | 100.0 | NC_000913.3 scaffold_34
+
+CONTIG: scaffold_35 (34638bp)
+Best alignment score: 29021.0 (LEN: 29021, IDY: 100.00), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 34384.0, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 8 between Alignment 1 and 2: 258676 264300 | 29014 34638 | 5625 5625 --> 258684 264300 | 29022 34638 | 5617 5617
+			Real Alignment 1: 228887 257907 | 1 29021 | 29021 29021 | 100.0 | NC_000913.3 scaffold_35
+			  Extensive misassembly (relocation, inconsistency = 776) between these two alignments
+			Real Alignment 2: 258684 264300 | 29022 34638 | 5617 5617 | 100.0 | NC_000913.3 scaffold_35
+
+CONTIG: scaffold_36 (37316bp)
+Best alignment score: 34321.3 (LEN: 34335, IDY: 99.96), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			The best set is below. Score: 36262.5, number of alignments: 3, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 2540 between Alignment 1 and 2: 1632533 1636892 | 4362 1 | 4360 4362 --> 1635071 1636892 | 1822 1 | 1822 1822
+			Real Alignment 1: 1635071 1636892 | 1822 1 | 1822 1822 | 99.17 | NC_000913.3 scaffold_36
+			  Extensive misassembly (relocation, inconsistency = 168512) between these two alignments
+			Excluding internal overlap of size 490 between Alignment 2 and 3: 1466363 1468027 | 35668 37316 | 1665 1649 --> 1466854 1468027 | 36158 37316 | 1174 1159
+			Real Alignment 2: 1432226 1466558 | 1823 36157 | 34333 34335 | 99.96 | NC_000913.3 scaffold_36
+			  Extensive misassembly (relocation, inconsistency = 295) between these two alignments
+			Real Alignment 3: 1466854 1468027 | 36158 37316 | 1174 1159 | 97.36 | NC_000913.3 scaffold_36
+
+CONTIG: scaffold_37 (31710bp)
+Best alignment score: 31710.0 (LEN: 31710, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 2070155 2101864 | 31710 1 | 31710 31710 | 100.0 | NC_000913.3 scaffold_37
+
+CONTIG: scaffold_38 (30971bp)
+Best alignment score: 30971.0 (LEN: 30971, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 4176991 4207961 | 1 30971 | 30971 30971 | 100.0 | NC_000913.3 scaffold_38
+
+CONTIG: scaffold_39 (36235bp)
+Best alignment score: 36047.4 (LEN: 36116, IDY: 99.81), Total number of alignments: 1
+		One align captures most of this contig: 2731254 2767436 | 1 36116 | 36183 36116 | 99.81 | NC_000913.3 scaffold_39
+
+CONTIG: scaffold_40 (27044bp)
+Best alignment score: 13688.0 (LEN: 13688, IDY: 100.00), Total number of alignments: 4
+			Looking for the best set of alignments (out of 4 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 378991 379097 | 27044 26938 | 107 107 | 100.0 | NC_000913.3 scaffold_40
+		This contig has several significant sets of alignments. [An ambiguously mapped contig]
+		Using only the very best set (option --ambiguity-usage is set to "one").
+			The best set is below. Score: 26440.0, number of alignments: 3, unaligned bases: 106
+		This contig is misassembled.
+			Real Alignment 1: 1196353 1207805 | 1 11453 | 11453 11453 | 100.0 | NC_000913.3 scaffold_40
+			  Extensive misassembly (inversion) between these two alignments
+			Real Alignment 2: 1207806 1209602 | 13250 11454 | 1797 1797 | 100.0 | NC_000913.3 scaffold_40
+			  Extensive misassembly (inversion) between these two alignments
+			Real Alignment 3: 1209603 1223290 | 13251 26938 | 13688 13688 | 100.0 | NC_000913.3 scaffold_40
+
+CONTIG: scaffold_41 (26790bp)
+Best alignment score: 26790.0 (LEN: 26790, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3625359 3652148 | 26790 1 | 26790 26790 | 100.0 | NC_000913.3 scaffold_41
+
+CONTIG: scaffold_42 (24063bp)
+Best alignment score: 24063.0 (LEN: 24063, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 291285 315347 | 1 24063 | 24063 24063 | 100.0 | NC_000913.3 scaffold_42
+
+CONTIG: scaffold_43 (19611bp)
+Best alignment score: 19493.0 (LEN: 19493, IDY: 100.00), Total number of alignments: 2
+		Skipping these alignments as insignificant (option --ambiguity-score is set to "0.99"):
+			Skipping alignment 4291784 4291902 | 19611 19493 | 119 119 | 100.0 | NC_000913.3 scaffold_43
+		One align captures most of this contig: 4478807 4498299 | 19493 1 | 19493 19493 | 100.0 | NC_000913.3 scaffold_43
+
+CONTIG: scaffold_44 (19357bp)
+Best alignment score: 19357.0 (LEN: 19357, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 1532797 1552153 | 19357 1 | 19357 19357 | 100.0 | NC_000913.3 scaffold_44
+
+CONTIG: scaffold_45 (18540bp)
+Best alignment score: 18540.0 (LEN: 18540, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 1552249 1570788 | 1 18540 | 18540 18540 | 100.0 | NC_000913.3 scaffold_45
+
+CONTIG: scaffold_46 (18050bp)
+Best alignment score: 18048.2 (LEN: 18050, IDY: 99.99), Total number of alignments: 1
+		One align captures most of this contig: 508671 526720 | 18050 1 | 18050 18050 | 99.99 | NC_000913.3 scaffold_46
+
+CONTIG: scaffold_47 (26201bp)
+Best alignment score: 26166.9 (LEN: 26201, IDY: 99.87), Total number of alignments: 1
+		One align captures most of this contig: 581891 608125 | 26201 1 | 26235 26201 | 99.87 | NC_000913.3 scaffold_47
+
+CONTIG: scaffold_48 (14188bp)
+Best alignment score: 14188.0 (LEN: 14188, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 1636774 1650961 | 14188 1 | 14188 14188 | 100.0 | NC_000913.3 scaffold_48
+
+CONTIG: scaffold_49 (13206bp)
+Best alignment score: 13206.0 (LEN: 13206, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3653118 3666323 | 13206 1 | 13206 13206 | 100.0 | NC_000913.3 scaffold_49
+
+CONTIG: scaffold_50 (12577bp)
+Best alignment score: 12322.0 (LEN: 12322, IDY: 100.00), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+		This contig has several significant sets of alignments. [An ambiguously mapped contig]
+		Using only the very best set (option --ambiguity-usage is set to "one").
+			The best set is below. Score: 12326.5, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 1 between Alignment 1 and 2: 1397125 1397380 | 1 256 | 256 256 --> 1397125 1397379 | 1 255 | 255 255
+			Real Alignment 1: 1397125 1397379 | 1 255 | 255 255 | 100.0 | NC_000913.3 scaffold_50
+			  Extensive misassembly (relocation, inconsistency = 13756) between these two alignments
+			Real Alignment 2: 1411136 1423457 | 256 12577 | 12322 12322 | 100.0 | NC_000913.3 scaffold_50
+
+CONTIG: scaffold_51 (10566bp)
+Best alignment score: 10566.0 (LEN: 10566, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 279994 290559 | 10566 1 | 10566 10566 | 100.0 | NC_000913.3 scaffold_51
+
+CONTIG: scaffold_52 (9353bp)
+Best alignment score: 9353.0 (LEN: 9353, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 382474 391826 | 1 9353 | 9353 9353 | 100.0 | NC_000913.3 scaffold_52
+
+CONTIG: scaffold_53 (8183bp)
+Best alignment score: 8183.0 (LEN: 8183, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 4499394 4507576 | 8183 1 | 8183 8183 | 100.0 | NC_000913.3 scaffold_53
+
+CONTIG: scaffold_54 (7663bp)
+Best alignment score: 7663.0 (LEN: 7663, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 2770598 2778260 | 7663 1 | 7663 7663 | 100.0 | NC_000913.3 scaffold_54
+
+CONTIG: scaffold_55 (6788bp)
+Best alignment score: 6788.0 (LEN: 6788, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 567917 574704 | 1 6788 | 6788 6788 | 100.0 | NC_000913.3 scaffold_55
+
+CONTIG: scaffold_56 (5263bp)
+Best alignment score: 5263.0 (LEN: 5263, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 4171847 4177109 | 1 5263 | 5263 5263 | 100.0 | NC_000913.3 scaffold_56
+
+CONTIG: scaffold_57 (8482bp)
+Best alignment score: 8326.5 (LEN: 8386, IDY: 99.29), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 334574 334669 | 8387 8482 | 96 96 | 100.0 | NC_000913.3 scaffold_57
+			The best set is below. Score: 8326.5, number of alignments: 1, unaligned bases: 96
+		Alignment: 1423381 1431826 | 1 8386 | 8446 8386 | 99.29 | NC_000913.3 scaffold_57
+
+CONTIG: scaffold_58 (4251bp)
+Best alignment score: 4251.0 (LEN: 4251, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 275031 279281 | 4251 1 | 4251 4251 | 100.0 | NC_000913.3 scaffold_58
+
+CONTIG: scaffold_59 (6362bp)
+Best alignment score: 6173.8 (LEN: 6250, IDY: 98.78), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 2484967 2485078 | 112 1 | 112 112 | 100.0 | NC_000913.3 scaffold_59
+			The best set is below. Score: 6173.8, number of alignments: 1, unaligned bases: 112
+		Alignment: 264331 270657 | 113 6362 | 6327 6250 | 98.78 | NC_000913.3 scaffold_59
+
+CONTIG: scaffold_60 (3301bp)
+Best alignment score: 3301.0 (LEN: 3301, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 16614 19914 | 3301 1 | 3301 3301 | 100.0 | NC_000913.3 scaffold_60
+
+CONTIG: scaffold_61 (3104bp)
+Best alignment score: 3104.0 (LEN: 3104, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 1529056 1532159 | 3104 1 | 3104 3104 | 100.0 | NC_000913.3 scaffold_61
+
+CONTIG: scaffold_62 (2713bp)
+Best alignment score: 2713.0 (LEN: 2713, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 575672 578384 | 2713 1 | 2713 2713 | 100.0 | NC_000913.3 scaffold_62
+
+CONTIG: scaffold_63 (2622bp)
+Best alignment score: 2622.0 (LEN: 2622, IDY: 100.00), Total number of alignments: 2
+		This contig has 2 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 3619273 3621894 | 1 2622 | 2622 2622 | 100.0 | NC_000913.3 scaffold_63
+			Skipping alignment 3762264 3764885 | 1 2622 | 2622 2622 | 99.96 | NC_000913.3 scaffold_63
+
+CONTIG: scaffold_64 (2431bp)
+Best alignment score: 2431.0 (LEN: 2431, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 271643 274073 | 2431 1 | 2431 2431 | 100.0 | NC_000913.3 scaffold_64
+
+CONTIG: scaffold_65 (2265bp)
+Best alignment score: 2265.0 (LEN: 2265, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 734980 737244 | 2265 1 | 2265 2265 | 100.0 | NC_000913.3 scaffold_65
+
+CONTIG: scaffold_66 (2120bp)
+Best alignment score: 2120.0 (LEN: 2120, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 578308 580427 | 1 2120 | 2120 2120 | 100.0 | NC_000913.3 scaffold_66
+
+CONTIG: scaffold_67 (1878bp)
+Best alignment score: 1878.0 (LEN: 1878, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 2067181 2069058 | 1 1878 | 1878 1878 | 100.0 | NC_000913.3 scaffold_67
+
+CONTIG: scaffold_68 (2726bp)
+Best alignment score: 1668.0 (LEN: 1668, IDY: 100.00), Total number of alignments: 14
+			Looking for the best set of alignments (out of 14 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 227494 228551 | 1058 1 | 1058 1058 | 100.0 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 4170376 4171433 | 1058 1 | 1058 1058 | 100.0 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 4211778 4212835 | 1058 1 | 1058 1058 | 100.0 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 4039253 4040312 | 1058 1 | 1060 1058 | 99.81 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 3423991 3425048 | 1 1058 | 1058 1058 | 99.72 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 3945439 3946496 | 1058 1 | 1058 1058 | 99.62 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 3425136 3426803 | 1059 2726 | 1668 1668 | 100.0 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 4210023 4211690 | 2726 1059 | 1668 1668 | 100.0 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 4168621 4170288 | 2726 1059 | 1668 1668 | 100.0 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 3943684 3945351 | 2726 1059 | 1668 1668 | 99.82 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 4037499 4039165 | 2726 1059 | 1667 1668 | 99.7 | NC_000913.3 scaffold_68
+		Skipping redundant alignment 225739 227406 | 2726 1059 | 1668 1668 | 99.64 | NC_000913.3 scaffold_68
+		This contig has several significant sets of alignments. [An ambiguously mapped contig]
+		Using only the very best set (option --ambiguity-usage is set to "one").
+			The best set is below. Score: 2702.0, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 2726392 2727449 | 1 1058 | 1058 1058 | 100.0 | NC_000913.3 scaffold_68
+			  Gap between these two alignments (local misassembly). Inconsistency = 87
+			Real Alignment 2: 2727537 2729204 | 1059 2726 | 1668 1668 | 100.0 | NC_000913.3 scaffold_68
+
+CONTIG: scaffold_69 (2967bp)
+Best alignment score: 1891.0 (LEN: 1907, IDY: 99.16), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 2650.1, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 398 between Alignment 1 and 2: 3622476 3623940 | 1510 2967 | 1465 1458 --> 3622881 3623940 | 1908 2967 | 1060 1060
+			Real Alignment 1: 3765711 3767624 | 1 1907 | 1914 1907 | 99.16 | NC_000913.3 scaffold_69
+			  Extensive misassembly (relocation, inconsistency = -144744) between these two alignments
+			Real Alignment 2: 3622881 3623940 | 1908 2967 | 1060 1060 | 99.45 | NC_000913.3 scaffold_69
+
+CONTIG: scaffold_70 (1345bp)
+Best alignment score: 1345.0 (LEN: 1345, IDY: 100.00), Total number of alignments: 3
+		This contig has 3 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 15387 16731 | 1345 1 | 1345 1345 | 100.0 | NC_000913.3 scaffold_70
+			Skipping alignment 2514273 2515617 | 1345 1 | 1345 1345 | 100.0 | NC_000913.3 scaffold_70
+			Skipping alignment 608007 609351 | 1345 1 | 1345 1345 | 100.0 | NC_000913.3 scaffold_70
+
+CONTIG: scaffold_71 (1283bp)
+Best alignment score: 1283.0 (LEN: 1283, IDY: 100.00), Total number of alignments: 7
+		This contig has 7 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 4035804 4037086 | 1283 1 | 1283 1283 | 100.0 | NC_000913.3 scaffold_71
+			Skipping alignment 4208420 4209702 | 1283 1 | 1283 1283 | 100.0 | NC_000913.3 scaffold_71
+			Skipping alignment 3942081 3943363 | 1283 1 | 1283 1283 | 100.0 | NC_000913.3 scaffold_71
+			Skipping alignment 4166932 4168214 | 1283 1 | 1283 1283 | 100.0 | NC_000913.3 scaffold_71
+			Skipping alignment 3427207 3428489 | 1 1283 | 1283 1283 | 100.0 | NC_000913.3 scaffold_71
+			Skipping alignment 2729602 2730884 | 1 1283 | 1283 1283 | 100.0 | NC_000913.3 scaffold_71
+			Skipping alignment 224044 225326 | 1283 1 | 1283 1283 | 99.38 | NC_000913.3 scaffold_71
+
+CONTIG: scaffold_72 (1261bp)
+Best alignment score: 1142.0 (LEN: 1142, IDY: 100.00), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 1197.8, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 2768629 2769770 | 1142 1 | 1142 1142 | 100.0 | NC_000913.3 scaffold_72
+			  Extensive misassembly (relocation, inconsistency = 762874) between these two alignments
+			Real Alignment 2: 2005636 2005754 | 1261 1143 | 119 119 | 100.0 | NC_000913.3 scaffold_72
+
+CONTIG: scaffold_73 (1255bp)
+Best alignment score: 1255.0 (LEN: 1255, IDY: 100.00), Total number of alignments: 5
+		This contig has 5 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 2170174 2171428 | 1255 1 | 1255 1255 | 100.0 | NC_000913.3 scaffold_73
+			Skipping alignment 566780 568034 | 1255 1 | 1255 1255 | 100.0 | NC_000913.3 scaffold_73
+			Skipping alignment 391709 392963 | 1 1255 | 1255 1255 | 100.0 | NC_000913.3 scaffold_73
+			Skipping alignment 315229 316483 | 1255 1 | 1255 1255 | 100.0 | NC_000913.3 scaffold_73
+			Skipping alignment 1094245 1095499 | 1 1255 | 1255 1255 | 100.0 | NC_000913.3 scaffold_73
+
+CONTIG: scaffold_74 (1156bp)
+Best alignment score: 1156.0 (LEN: 1156, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 733111 734266 | 1 1156 | 1156 1156 | 100.0 | NC_000913.3 scaffold_74
+
+CONTIG: scaffold_75 (1133bp)
+Best alignment score: 1133.0 (LEN: 1133, IDY: 100.00), Total number of alignments: 2
+		This contig has 2 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 3666205 3667337 | 1133 1 | 1133 1133 | 100.0 | NC_000913.3 scaffold_75
+			Skipping alignment 1570670 1571802 | 1133 1 | 1133 1133 | 99.74 | NC_000913.3 scaffold_75
+
+CONTIG: scaffold_76 (1045bp)
+Best alignment score: 1045.0 (LEN: 1045, IDY: 100.00), Total number of alignments: 3
+		This contig has 3 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 4507635 4508679 | 1 1045 | 1045 1045 | 100.0 | NC_000913.3 scaffold_76
+			Skipping alignment 1469296 1470340 | 1045 1 | 1045 1045 | 100.0 | NC_000913.3 scaffold_76
+			Skipping alignment 270541 271585 | 1045 1 | 1045 1045 | 99.81 | NC_000913.3 scaffold_76
+
+Analyzing coverage...
+Writing SNPs into /run/media/ymeng/ymeng/work/mis_work/E.coli/SRR12717904/quast/ecoli_QUAST/contigs_reports/minimap_output/scaffold.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /run/media/ymeng/ymeng/work/mis_work/E.coli/SRR12717904/quast/ecoli_QUAST/contigs_reports/minimap_output/scaffold.used_snps.gz
+
+Results:
+	Local Misassemblies: 1
+	Misassemblies: 21
+		Relocations: 19
+		Translocations: 0
+		Inversions: 2
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 14
+	Misassembled Contig Bases: 1637370
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 0
+
+Ambiguously Mapped Contigs: 11
+Total Bases in Ambiguously Mapped Contigs: 308885
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 4534778
+
+	SNPs: 67
+	Insertions: 45
+	Deletions: 628
+

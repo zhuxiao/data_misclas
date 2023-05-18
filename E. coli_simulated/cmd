@@ -38,7 +38,7 @@ filterOverlapReg.py PilonRaw scaffold.fa.fai > PilonReg
 misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f MisasmReg
 
 misClas_REAPR
-cat misassemblies_REAPR | grep "Error" | awk '{print $1"\t"$4"\t"$5}' > REAPRaw
+cat misassemblies_REAPR | grep "Error" | awk '{print $1"\t"$4"\t"$5}' > REAPRaw   || cat misassemblies_REAPR | grep "Error" | grep -v "Frag_cov" | awk '{print $1"\t"$4"\t"$5}'
 filterOverlapReg.py REAPRaw scaffold.fa.fai > REAPReg
 misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f REAPReg
 
