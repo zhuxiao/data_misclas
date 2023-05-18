@@ -1,0 +1,17 @@
+# This is a configuration example file.
+
+QUERY
+# Assembly result file, e.g. scaffolds or contigs in fasta format.
+scaffold.fa
+END
+
+REF
+# Reference segments in fasta format.
+NC_000913.3
+END
+
+READS
+# Paired-end reads in fastq or fasta format.
+PE=wgsim_ecoli_50x_1.fq	wgsim_ecoli_50x_2.fq
+END
+

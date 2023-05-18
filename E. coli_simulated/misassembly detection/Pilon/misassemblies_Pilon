@@ -1,0 +1,1008 @@
+Pilon version [COMMIT] [DATE]
+Genome: ../BWA-bam/scaffold.fa
+Fixing snps, indels, gaps, local
+Input genome size: 4572497
+Scanning BAMs
+../BWA-bam/ecoli_50x_idba_sorted.bam: 1547587 reads, 0 filtered, 1547129 mapped, 1528363 proper, 18230 stray, FR 100% 500+/-50, max 650
+Processing scaffold_0:1-327196
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 109597, Coverage: 43, minDepth: 5
+Confirmed 326688 of 327196 bases (99.84%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_0:1-327196 log:
+Finished processing scaffold_0:1-327196
+Processing scaffold_1:1-312585
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 104645, Coverage: 43, minDepth: 5
+Confirmed 311928 of 312416 bases (99.84%)
+Corrected 1 snps; 0 ambiguous bases; corrected 1 small insertions totaling 12 bases, 0 small deletions totaling 0 bases
+# Attempting to fill gaps
+fix gap: scaffold_1:44126-44294 44126 -0 +208 ClosedGap
+# Attempting to fix local continuity breaks
+scaffold_1:1-312585 log:
+Finished processing scaffold_1:1-312585
+Processing scaffold_2:1-265292
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 87953, Coverage: 43, minDepth: 5
+Confirmed 264844 of 265292 bases (99.83%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_2:28834-28965 0 -0 +0 NoSolution
+# fix break: scaffold_2:216259-216310 0 -0 +0 NoSolution TandemRepeat 110
+scaffold_2:1-265292 log:
+Finished processing scaffold_2:1-265292
+Processing scaffold_3:1-224272
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 44
+Total Reads: 75518, Coverage: 44, minDepth: 5
+Confirmed 223855 of 224248 bases (99.82%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fill gaps
+scaffold_3:1-224272 log:
+Finished processing scaffold_3:1-224272
+Processing scaffold_4:1-204738
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 68047, Coverage: 43, minDepth: 5
+Confirmed 204395 of 204738 bases (99.83%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_4:141098-141108 0 -0 +0 NoSolution TandemRepeat 91
+scaffold_4:1-204738 log:
+Finished processing scaffold_4:1-204738
+Processing scaffold_5:1-203114
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 67572, Coverage: 43, minDepth: 5
+Confirmed 202792 of 203114 bases (99.84%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_5:1-203114 log:
+Finished processing scaffold_5:1-203114
+Processing scaffold_6:1-200591
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 66490, Coverage: 43, minDepth: 5
+Confirmed 200218 of 200591 bases (99.81%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_6:171428-172073 0 -0 +0 NoSolution TandemRepeat 534
+# fix break: scaffold_6:188000-188314 0 -0 +0 NoSolution TandemRepeat 178
+scaffold_6:1-200591 log:
+Finished processing scaffold_6:1-200591
+Processing scaffold_7:1-178506
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 59784, Coverage: 43, minDepth: 5
+Confirmed 178222 of 178506 bases (99.84%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_7:1-178506 log:
+Finished processing scaffold_7:1-178506
+Processing scaffold_8:1-176070
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 58969, Coverage: 43, minDepth: 5
+Confirmed 175750 of 176070 bases (99.82%)
+Corrected 2 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+fix break: scaffold_8:174329-174616 174564 -29 +47 BreakFix
+scaffold_8:1-176070 log:
+Finished processing scaffold_8:1-176070
+Processing scaffold_9:1-284543
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 94839, Coverage: 43, minDepth: 5
+Confirmed 284039 of 284543 bases (99.82%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_9:82748-83036 0 -0 +0 NoSolution TandemRepeat 113
+# fix break: scaffold_9:112501-112766 0 -0 +0 NoSolution TandemRepeat 100
+# fix break: scaffold_9:178924-178944 0 -0 +0 NoSolution TandemRepeat 111
+scaffold_9:1-284543 log:
+Finished processing scaffold_9:1-284543
+Processing scaffold_10:1-133196
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 44369, Coverage: 43, minDepth: 5
+Confirmed 132901 of 133196 bases (99.78%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_10:1-133196 log:
+Finished processing scaffold_10:1-133196
+Processing scaffold_11:1-133131
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 44568, Coverage: 43, minDepth: 5
+Confirmed 132915 of 133131 bases (99.84%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_11:1-133131 log:
+Finished processing scaffold_11:1-133131
+Processing scaffold_12:1-132695
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 44412, Coverage: 43, minDepth: 5
+Confirmed 132479 of 132695 bases (99.84%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_12:1-132695 log:
+Finished processing scaffold_12:1-132695
+Processing scaffold_13:1-125644
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 42134, Coverage: 43, minDepth: 5
+Confirmed 125420 of 125644 bases (99.82%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_13:1-125644 log:
+Finished processing scaffold_13:1-125644
+Processing scaffold_14:1-117670
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 38839, Coverage: 43, minDepth: 5
+Confirmed 117485 of 117670 bases (99.84%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_14:1-117670 log:
+Finished processing scaffold_14:1-117670
+Processing scaffold_15:1-112588
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 37241, Coverage: 43, minDepth: 5
+Confirmed 112404 of 112588 bases (99.84%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_15:1-112588 log:
+Finished processing scaffold_15:1-112588
+Processing scaffold_16:1-95547
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 44
+Total Reads: 32529, Coverage: 44, minDepth: 5
+Confirmed 95395 of 95547 bases (99.84%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_16:1-95547 log:
+Finished processing scaffold_16:1-95547
+Processing scaffold_17:1-95372
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 31467, Coverage: 43, minDepth: 5
+Confirmed 95147 of 95372 bases (99.76%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_17:1-95372 log:
+Finished processing scaffold_17:1-95372
+Processing scaffold_18:1-88527
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 29296, Coverage: 43, minDepth: 5
+Confirmed 88334 of 88527 bases (99.78%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_18:80366-80603 0 -0 +0 NoSolution TandemRepeat 98
+scaffold_18:1-88527 log:
+Finished processing scaffold_18:1-88527
+Processing scaffold_19:1-87139
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 28886, Coverage: 43, minDepth: 5
+Confirmed 86967 of 87139 bases (99.80%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_19:1-87139 log:
+Finished processing scaffold_19:1-87139
+Processing scaffold_20:1-78724
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 26266, Coverage: 43, minDepth: 5
+Confirmed 78562 of 78724 bases (99.79%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_20:1-78724 log:
+Finished processing scaffold_20:1-78724
+Processing scaffold_21:1-67456
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 22268, Coverage: 43, minDepth: 5
+Confirmed 67308 of 67456 bases (99.78%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_21:1-67456 log:
+Finished processing scaffold_21:1-67456
+Processing scaffold_22:1-61344
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 20310, Coverage: 43, minDepth: 5
+Confirmed 61221 of 61344 bases (99.80%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_22:1-61344 log:
+Finished processing scaffold_22:1-61344
+Processing scaffold_23:1-58059
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 19527, Coverage: 43, minDepth: 5
+Confirmed 57931 of 58059 bases (99.78%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_23:1-58059 log:
+Finished processing scaffold_23:1-58059
+Processing scaffold_24:1-57026
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 18874, Coverage: 43, minDepth: 5
+Confirmed 56880 of 57026 bases (99.74%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_24:1-57026 log:
+Finished processing scaffold_24:1-57026
+Processing scaffold_25:1-54901
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 44
+Total Reads: 18626, Coverage: 44, minDepth: 5
+Confirmed 54816 of 54901 bases (99.85%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_25:1-54901 log:
+Finished processing scaffold_25:1-54901
+Processing scaffold_26:1-45830
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 15677, Coverage: 43, minDepth: 5
+Confirmed 45711 of 45830 bases (99.74%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_26:2592-3309 0 -0 +0 NoSolution
+scaffold_26:1-45830 log:
+Finished processing scaffold_26:1-45830
+Processing scaffold_27:1-42400
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 14374, Coverage: 43, minDepth: 5
+Confirmed 42313 of 42400 bases (99.79%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_27:1-42400 log:
+Finished processing scaffold_27:1-42400
+Processing scaffold_28:1-64877
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 21620, Coverage: 43, minDepth: 5
+Confirmed 64579 of 64744 bases (99.75%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fill gaps
+fix gap: scaffold_28:41275-41407 41275 -0 +32 PartialFill TandemRepeat 93
+scaffold_28:1-64877 log:
+Finished processing scaffold_28:1-64877
+Processing scaffold_29:1-41060
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 13657, Coverage: 43, minDepth: 5
+Confirmed 40961 of 41060 bases (99.76%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_29:1-41060 log:
+Finished processing scaffold_29:1-41060
+Processing scaffold_30:1-41018
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 13745, Coverage: 43, minDepth: 5
+Confirmed 40922 of 41018 bases (99.77%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_30:1-41018 log:
+Finished processing scaffold_30:1-41018
+Processing scaffold_31:1-37810
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 44
+Total Reads: 12823, Coverage: 44, minDepth: 5
+Confirmed 37714 of 37810 bases (99.75%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_31:18375-18691 0 -0 +0 NoSolution TandemRepeat 178
+scaffold_31:1-37810 log:
+Finished processing scaffold_31:1-37810
+Processing scaffold_32:1-35347
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 11598, Coverage: 42, minDepth: 5
+Confirmed 35224 of 35347 bases (99.65%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_32:1-35347 log:
+Finished processing scaffold_32:1-35347
+Processing scaffold_33:1-35661
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 44
+Total Reads: 12466, Coverage: 44, minDepth: 5
+Confirmed 35475 of 35571 bases (99.73%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fill gaps
+scaffold_33:1-35661 log:
+Finished processing scaffold_33:1-35661
+Processing scaffold_34:1-31696
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 44
+Total Reads: 10790, Coverage: 44, minDepth: 5
+Confirmed 31626 of 31696 bases (99.78%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_34:1-31696 log:
+Finished processing scaffold_34:1-31696
+Processing scaffold_35:1-31156
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 10317, Coverage: 42, minDepth: 5
+Confirmed 31056 of 31156 bases (99.68%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_35:1-31156 log:
+Finished processing scaffold_35:1-31156
+Processing scaffold_36:1-29245
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 43
+Total Reads: 9752, Coverage: 43, minDepth: 5
+Confirmed 29169 of 29245 bases (99.74%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_36:1-29245 log:
+Finished processing scaffold_36:1-29245
+Processing scaffold_37:1-30702
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 10124, Coverage: 42, minDepth: 5
+Confirmed 30640 of 30702 bases (99.80%)
+Corrected 0 snps; 0 ambiguous bases; corrected 1 small insertions totaling 17 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+fix break: scaffold_37:4444-4460 4461 -0 +17 BreakFix
+scaffold_37:1-30702 log:
+Finished processing scaffold_37:1-30702
+Processing scaffold_38:1-24050
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 8002, Coverage: 42, minDepth: 5
+Confirmed 23978 of 24050 bases (99.70%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_38:1-24050 log:
+Finished processing scaffold_38:1-24050
+Processing scaffold_39:1-15503
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 5060, Coverage: 42, minDepth: 5
+Confirmed 15402 of 15503 bases (99.35%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_39:1-15503 log:
+Finished processing scaffold_39:1-15503
+Processing scaffold_40:1-26454
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 41
+Total Reads: 8609, Coverage: 41, minDepth: 5
+Confirmed 26345 of 26454 bases (99.59%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_40:1-26454 log:
+Finished processing scaffold_40:1-26454
+Processing scaffold_41:1-26795
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 8925, Coverage: 42, minDepth: 5
+Confirmed 26720 of 26793 bases (99.73%)
+Corrected 0 snps; 0 ambiguous bases; corrected 1 small insertions totaling 5 bases, 0 small deletions totaling 0 bases
+scaffold_41:1-26795 log:
+Finished processing scaffold_41:1-26795
+Processing scaffold_42:1-14188
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 4703, Coverage: 42, minDepth: 5
+Confirmed 14116 of 14188 bases (99.49%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_42:1-14188 log:
+Finished processing scaffold_42:1-14188
+Processing scaffold_43:1-13210
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 4381, Coverage: 42, minDepth: 5
+Confirmed 13115 of 13210 bases (99.28%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_43:1-13210 log:
+Finished processing scaffold_43:1-13210
+Processing scaffold_44:1-12169
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 4064, Coverage: 42, minDepth: 5
+Confirmed 12095 of 12169 bases (99.39%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_44:1-12169 log:
+Finished processing scaffold_44:1-12169
+Processing scaffold_45:1-10631
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 40
+Total Reads: 3396, Coverage: 40, minDepth: 5
+Confirmed 10583 of 10631 bases (99.55%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_45:1-10631 log:
+Finished processing scaffold_45:1-10631
+Processing scaffold_46:1-9351
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 3175, Coverage: 42, minDepth: 5
+Confirmed 9276 of 9351 bases (99.20%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_46:1-9351 log:
+Finished processing scaffold_46:1-9351
+Processing scaffold_47:1-8254
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 41
+Total Reads: 2696, Coverage: 41, minDepth: 5
+Confirmed 8203 of 8254 bases (99.38%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_47:1-8254 log:
+Finished processing scaffold_47:1-8254
+Processing scaffold_48:1-6788
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 40
+Total Reads: 2240, Coverage: 40, minDepth: 5
+Confirmed 6723 of 6788 bases (99.04%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_48:1-6788 log:
+Finished processing scaffold_48:1-6788
+Processing scaffold_49:1-6021
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 41
+Total Reads: 2078, Coverage: 41, minDepth: 5
+Confirmed 5985 of 6021 bases (99.40%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_49:1-6021 log:
+Finished processing scaffold_49:1-6021
+Processing scaffold_50:1-5034
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 263
+Total Reads: 11337, Coverage: 263, minDepth: 26
+Confirmed 4935 of 5034 bases (98.03%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_50:3039-3318 0 -0 +0 NoSolution
+scaffold_50:1-5034 log:
+Finished processing scaffold_50:1-5034
+Processing scaffold_51:1-4351
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 38
+Total Reads: 1424, Coverage: 38, minDepth: 5
+Confirmed 4275 of 4351 bases (98.25%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_51:1-4351 log:
+Finished processing scaffold_51:1-4351
+Processing scaffold_52:1-4321
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 38
+Total Reads: 1387, Coverage: 38, minDepth: 5
+Confirmed 4280 of 4321 bases (99.05%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_52:1-4321 log:
+Finished processing scaffold_52:1-4321
+Processing scaffold_53:1-4244
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 37
+Total Reads: 1294, Coverage: 37, minDepth: 5
+Confirmed 4172 of 4244 bases (98.30%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_53:1-4244 log:
+Finished processing scaffold_53:1-4244
+Processing scaffold_54:1-3301
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 37
+Total Reads: 1055, Coverage: 37, minDepth: 5
+Confirmed 3241 of 3301 bases (98.18%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_54:1-3301 log:
+Finished processing scaffold_54:1-3301
+Processing scaffold_55:1-3082
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 110
+Total Reads: 3113, Coverage: 110, minDepth: 11
+Confirmed 2990 of 3082 bases (97.01%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_55:1-3082 log:
+Finished processing scaffold_55:1-3082
+Processing scaffold_56:1-2871
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 53
+Total Reads: 1505, Coverage: 53, minDepth: 5
+Confirmed 2790 of 2871 bases (97.18%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_56:1-2871 log:
+Finished processing scaffold_56:1-2871
+Processing scaffold_57:1-4710
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 38
+Total Reads: 1495, Coverage: 38, minDepth: 5
+Confirmed 4624 of 4710 bases (98.17%)
+Corrected 0 snps; 0 ambiguous bases; corrected 1 small insertions totaling 26 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+fix break: scaffold_57:2082-2125 2121 -0 +26 BreakFix
+scaffold_57:1-4710 log:
+Finished processing scaffold_57:1-4710
+Processing scaffold_58:1-2558
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 39
+Total Reads: 996, Coverage: 39, minDepth: 5
+Confirmed 2520 of 2558 bases (98.51%)
+Corrected 2 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scaffold_58:149-321 0 -0 +0 NoSolution TandemRepeat 380
+scaffold_58:1-2558 log:
+Finished processing scaffold_58:1-2558
+Processing scaffold_59:1-2431
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 34
+Total Reads: 754, Coverage: 34, minDepth: 5
+Confirmed 2358 of 2431 bases (97.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_59:1-2431 log:
+Finished processing scaffold_59:1-2431
+Processing scaffold_60:1-1989
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 44
+Total Reads: 941, Coverage: 44, minDepth: 5
+Confirmed 1933 of 1989 bases (97.18%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+fix break: scaffold_60:915-935 1256 -15 +15 BreakFix
+scaffold_60:1-1989 log:
+Finished processing scaffold_60:1-1989
+Processing scaffold_61:1-1861
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 31
+Total Reads: 552, Coverage: 31, minDepth: 5
+Confirmed 1806 of 1861 bases (97.04%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_61:1-1861 log:
+Finished processing scaffold_61:1-1861
+Processing scaffold_62:1-1836
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 42
+Total Reads: 819, Coverage: 42, minDepth: 5
+Confirmed 1809 of 1836 bases (98.53%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_62:1-1836 log:
+Finished processing scaffold_62:1-1836
+Processing scaffold_63:1-1345
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 87
+Total Reads: 1237, Coverage: 87, minDepth: 9
+Confirmed 1335 of 1345 bases (99.26%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_63:1-1345 log:
+Finished processing scaffold_63:1-1345
+Processing scaffold_64:1-1255
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 140
+Total Reads: 1904, Coverage: 140, minDepth: 14
+Confirmed 1235 of 1255 bases (98.41%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_64:1-1255 log:
+Finished processing scaffold_64:1-1255
+Processing scaffold_65:1-1133
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 58
+Total Reads: 701, Coverage: 58, minDepth: 6
+Confirmed 1113 of 1133 bases (98.23%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_65:1-1133 log:
+Finished processing scaffold_65:1-1133
+Processing scaffold_66:1-1103
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 73
+Total Reads: 1000, Coverage: 73, minDepth: 7
+Confirmed 1086 of 1103 bases (98.46%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_66:1-1103 log:
+Finished processing scaffold_66:1-1103
+Processing scaffold_67:1-744
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 105
+Total Reads: 1256, Coverage: 105, minDepth: 11
+Confirmed 742 of 744 bases (99.73%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_67:1-744 log:
+Finished processing scaffold_67:1-744
+Processing scaffold_68:1-633
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 85
+Total Reads: 1215, Coverage: 85, minDepth: 9
+Confirmed 628 of 633 bases (99.21%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_68:1-633 log:
+Finished processing scaffold_68:1-633
+Processing scaffold_69:1-604
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 133
+Total Reads: 1978, Coverage: 133, minDepth: 13
+Confirmed 601 of 604 bases (99.50%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_69:1-604 log:
+Finished processing scaffold_69:1-604
+Processing scaffold_70:1-542
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 70
+Total Reads: 1540, Coverage: 70, minDepth: 7
+Confirmed 534 of 542 bases (98.52%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scaffold_70:1-542 log:
+Finished processing scaffold_70:1-542
+Processing scaffold_71:1-529
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 13
+Total Reads: 300, Coverage: 13, minDepth: 5
+Confirmed 387 of 529 bases (73.16%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_71:1-529 log:
+Finished processing scaffold_71:1-529
+Processing scaffold_72:1-419
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 4
+Total Reads: 694, Coverage: 4, minDepth: 5
+Confirmed 174 of 419 bases (41.53%)
+Corrected 1 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_72:1-419 log:
+Finished processing scaffold_72:1-419
+Processing scaffold_73:1-409
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 88, Coverage: 0, minDepth: 5
+Confirmed 0 of 409 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_73:1-409 log:
+Finished processing scaffold_73:1-409
+Processing scaffold_74:1-337
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 194, Coverage: 0, minDepth: 5
+Confirmed 0 of 337 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_74:1-337 log:
+Finished processing scaffold_74:1-337
+Processing scaffold_75:1-282
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 1
+Total Reads: 231, Coverage: 1, minDepth: 5
+Confirmed 0 of 282 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_75:1-282 log:
+Finished processing scaffold_75:1-282
+Processing scaffold_76:1-239
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 59, Coverage: 0, minDepth: 5
+Confirmed 0 of 239 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_76:1-239 log:
+Finished processing scaffold_76:1-239
+Processing scaffold_77:1-231
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 131, Coverage: 0, minDepth: 5
+Confirmed 0 of 231 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_77:1-231 log:
+Finished processing scaffold_77:1-231
+Processing scaffold_78:1-222
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 315, Coverage: 0, minDepth: 5
+Confirmed 0 of 222 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_78:1-222 log:
+Finished processing scaffold_78:1-222
+Processing scaffold_79:1-212
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 105, Coverage: 0, minDepth: 5
+Confirmed 0 of 212 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_79:1-212 log:
+Finished processing scaffold_79:1-212
+Processing scaffold_80:1-190
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 111, Coverage: 0, minDepth: 5
+Confirmed 0 of 190 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_80:1-190 log:
+Finished processing scaffold_80:1-190
+Processing scaffold_81:1-184
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 93, Coverage: 0, minDepth: 5
+Confirmed 0 of 184 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_81:1-184 log:
+Finished processing scaffold_81:1-184
+Processing scaffold_82:1-167
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 114, Coverage: 0, minDepth: 5
+Confirmed 0 of 167 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_82:1-167 log:
+Finished processing scaffold_82:1-167
+Processing scaffold_83:1-164
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 71, Coverage: 0, minDepth: 5
+Confirmed 0 of 164 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_83:1-164 log:
+Finished processing scaffold_83:1-164
+Processing scaffold_84:1-161
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 46, Coverage: 0, minDepth: 5
+Confirmed 0 of 161 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_84:1-161 log:
+Finished processing scaffold_84:1-161
+Processing scaffold_85:1-156
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 45, Coverage: 0, minDepth: 5
+Confirmed 0 of 156 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_85:1-156 log:
+Finished processing scaffold_85:1-156
+Processing scaffold_86:1-146
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 37, Coverage: 0, minDepth: 5
+Confirmed 0 of 146 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_86:1-146 log:
+Finished processing scaffold_86:1-146
+Processing scaffold_87:1-136
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 18, Coverage: 0, minDepth: 5
+Confirmed 0 of 136 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_87:1-136 log:
+Finished processing scaffold_87:1-136
+Processing scaffold_88:1-135
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 11, Coverage: 0, minDepth: 5
+Confirmed 0 of 135 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_88:1-135 log:
+Finished processing scaffold_88:1-135
+Processing scaffold_89:1-134
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 5, Coverage: 0, minDepth: 5
+Confirmed 0 of 134 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_89:1-134 log:
+Finished processing scaffold_89:1-134
+Processing scaffold_90:1-128
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 1, Coverage: 0, minDepth: 5
+Confirmed 0 of 128 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_90:1-128 log:
+Finished processing scaffold_90:1-128
+Processing scaffold_91:1-126
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 126 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_91:1-126 log:
+Finished processing scaffold_91:1-126
+Processing scaffold_92:1-124
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 124 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_92:1-124 log:
+Finished processing scaffold_92:1-124
+Processing scaffold_93:1-123
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 2, Coverage: 0, minDepth: 5
+Confirmed 0 of 123 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_93:1-123 log:
+Finished processing scaffold_93:1-123
+Processing scaffold_94:1-123
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 123 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_94:1-123 log:
+Finished processing scaffold_94:1-123
+Processing scaffold_95:1-123
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 123 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_95:1-123 log:
+Finished processing scaffold_95:1-123
+Processing scaffold_96:1-122
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 122 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_96:1-122 log:
+Finished processing scaffold_96:1-122
+Processing scaffold_97:1-122
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 1, Coverage: 0, minDepth: 5
+Confirmed 0 of 122 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_97:1-122 log:
+Finished processing scaffold_97:1-122
+Processing scaffold_98:1-121
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 121 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_98:1-121 log:
+Finished processing scaffold_98:1-121
+Processing scaffold_99:1-121
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 121 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_99:1-121 log:
+Finished processing scaffold_99:1-121
+Processing scaffold_100:1-121
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 121 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_100:1-121 log:
+Finished processing scaffold_100:1-121
+Processing scaffold_101:1-120
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 120 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_101:1-120 log:
+Finished processing scaffold_101:1-120
+Processing scaffold_102:1-120
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 120 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_102:1-120 log:
+Finished processing scaffold_102:1-120
+Processing scaffold_103:1-120
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 120 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_103:1-120 log:
+Finished processing scaffold_103:1-120
+Processing scaffold_104:1-120
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 120 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_104:1-120 log:
+Finished processing scaffold_104:1-120
+Processing scaffold_105:1-120
+frags ../BWA-bam/ecoli_50x_idba_sorted.bam: coverage 0
+Total Reads: 0, Coverage: 0, minDepth: 5
+Confirmed 0 of 120 bases (0.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scaffold_105:1-120 log:
+Finished processing scaffold_105:1-120
+Writing scaffold_0:1-327196 changes to Pilon_out/pilon.changes
+Writing updated scaffold_0_pilon to Pilon_out/pilon.fasta
+Writing scaffold_1:1-312585 changes to Pilon_out/pilon.changes
+Writing updated scaffold_1_pilon to Pilon_out/pilon.fasta
+Writing scaffold_2:1-265292 changes to Pilon_out/pilon.changes
+Writing updated scaffold_2_pilon to Pilon_out/pilon.fasta
+Writing scaffold_3:1-224272 changes to Pilon_out/pilon.changes
+Writing updated scaffold_3_pilon to Pilon_out/pilon.fasta
+Writing scaffold_4:1-204738 changes to Pilon_out/pilon.changes
+Writing updated scaffold_4_pilon to Pilon_out/pilon.fasta
+Writing scaffold_5:1-203114 changes to Pilon_out/pilon.changes
+Writing updated scaffold_5_pilon to Pilon_out/pilon.fasta
+Writing scaffold_6:1-200591 changes to Pilon_out/pilon.changes
+Writing updated scaffold_6_pilon to Pilon_out/pilon.fasta
+Writing scaffold_7:1-178506 changes to Pilon_out/pilon.changes
+Writing updated scaffold_7_pilon to Pilon_out/pilon.fasta
+Writing scaffold_8:1-176070 changes to Pilon_out/pilon.changes
+Writing updated scaffold_8_pilon to Pilon_out/pilon.fasta
+Writing scaffold_9:1-284543 changes to Pilon_out/pilon.changes
+Writing updated scaffold_9_pilon to Pilon_out/pilon.fasta
+Writing scaffold_10:1-133196 changes to Pilon_out/pilon.changes
+Writing updated scaffold_10_pilon to Pilon_out/pilon.fasta
+Writing scaffold_11:1-133131 changes to Pilon_out/pilon.changes
+Writing updated scaffold_11_pilon to Pilon_out/pilon.fasta
+Writing scaffold_12:1-132695 changes to Pilon_out/pilon.changes
+Writing updated scaffold_12_pilon to Pilon_out/pilon.fasta
+Writing scaffold_13:1-125644 changes to Pilon_out/pilon.changes
+Writing updated scaffold_13_pilon to Pilon_out/pilon.fasta
+Writing scaffold_14:1-117670 changes to Pilon_out/pilon.changes
+Writing updated scaffold_14_pilon to Pilon_out/pilon.fasta
+Writing scaffold_15:1-112588 changes to Pilon_out/pilon.changes
+Writing updated scaffold_15_pilon to Pilon_out/pilon.fasta
+Writing scaffold_16:1-95547 changes to Pilon_out/pilon.changes
+Writing updated scaffold_16_pilon to Pilon_out/pilon.fasta
+Writing scaffold_17:1-95372 changes to Pilon_out/pilon.changes
+Writing updated scaffold_17_pilon to Pilon_out/pilon.fasta
+Writing scaffold_18:1-88527 changes to Pilon_out/pilon.changes
+Writing updated scaffold_18_pilon to Pilon_out/pilon.fasta
+Writing scaffold_19:1-87139 changes to Pilon_out/pilon.changes
+Writing updated scaffold_19_pilon to Pilon_out/pilon.fasta
+Writing scaffold_20:1-78724 changes to Pilon_out/pilon.changes
+Writing updated scaffold_20_pilon to Pilon_out/pilon.fasta
+Writing scaffold_21:1-67456 changes to Pilon_out/pilon.changes
+Writing updated scaffold_21_pilon to Pilon_out/pilon.fasta
+Writing scaffold_22:1-61344 changes to Pilon_out/pilon.changes
+Writing updated scaffold_22_pilon to Pilon_out/pilon.fasta
+Writing scaffold_23:1-58059 changes to Pilon_out/pilon.changes
+Writing updated scaffold_23_pilon to Pilon_out/pilon.fasta
+Writing scaffold_24:1-57026 changes to Pilon_out/pilon.changes
+Writing updated scaffold_24_pilon to Pilon_out/pilon.fasta
+Writing scaffold_25:1-54901 changes to Pilon_out/pilon.changes
+Writing updated scaffold_25_pilon to Pilon_out/pilon.fasta
+Writing scaffold_26:1-45830 changes to Pilon_out/pilon.changes
+Writing updated scaffold_26_pilon to Pilon_out/pilon.fasta
+Writing scaffold_27:1-42400 changes to Pilon_out/pilon.changes
+Writing updated scaffold_27_pilon to Pilon_out/pilon.fasta
+Writing scaffold_28:1-64877 changes to Pilon_out/pilon.changes
+Writing updated scaffold_28_pilon to Pilon_out/pilon.fasta
+Writing scaffold_29:1-41060 changes to Pilon_out/pilon.changes
+Writing updated scaffold_29_pilon to Pilon_out/pilon.fasta
+Writing scaffold_30:1-41018 changes to Pilon_out/pilon.changes
+Writing updated scaffold_30_pilon to Pilon_out/pilon.fasta
+Writing scaffold_31:1-37810 changes to Pilon_out/pilon.changes
+Writing updated scaffold_31_pilon to Pilon_out/pilon.fasta
+Writing scaffold_32:1-35347 changes to Pilon_out/pilon.changes
+Writing updated scaffold_32_pilon to Pilon_out/pilon.fasta
+Writing scaffold_33:1-35661 changes to Pilon_out/pilon.changes
+Writing updated scaffold_33_pilon to Pilon_out/pilon.fasta
+Writing scaffold_34:1-31696 changes to Pilon_out/pilon.changes
+Writing updated scaffold_34_pilon to Pilon_out/pilon.fasta
+Writing scaffold_35:1-31156 changes to Pilon_out/pilon.changes
+Writing updated scaffold_35_pilon to Pilon_out/pilon.fasta
+Writing scaffold_36:1-29245 changes to Pilon_out/pilon.changes
+Writing updated scaffold_36_pilon to Pilon_out/pilon.fasta
+Writing scaffold_37:1-30702 changes to Pilon_out/pilon.changes
+Writing updated scaffold_37_pilon to Pilon_out/pilon.fasta
+Writing scaffold_38:1-24050 changes to Pilon_out/pilon.changes
+Writing updated scaffold_38_pilon to Pilon_out/pilon.fasta
+Writing scaffold_39:1-15503 changes to Pilon_out/pilon.changes
+Writing updated scaffold_39_pilon to Pilon_out/pilon.fasta
+Writing scaffold_40:1-26454 changes to Pilon_out/pilon.changes
+Writing updated scaffold_40_pilon to Pilon_out/pilon.fasta
+Writing scaffold_41:1-26795 changes to Pilon_out/pilon.changes
+Writing updated scaffold_41_pilon to Pilon_out/pilon.fasta
+Writing scaffold_42:1-14188 changes to Pilon_out/pilon.changes
+Writing updated scaffold_42_pilon to Pilon_out/pilon.fasta
+Writing scaffold_43:1-13210 changes to Pilon_out/pilon.changes
+Writing updated scaffold_43_pilon to Pilon_out/pilon.fasta
+Writing scaffold_44:1-12169 changes to Pilon_out/pilon.changes
+Writing updated scaffold_44_pilon to Pilon_out/pilon.fasta
+Writing scaffold_45:1-10631 changes to Pilon_out/pilon.changes
+Writing updated scaffold_45_pilon to Pilon_out/pilon.fasta
+Writing scaffold_46:1-9351 changes to Pilon_out/pilon.changes
+Writing updated scaffold_46_pilon to Pilon_out/pilon.fasta
+Writing scaffold_47:1-8254 changes to Pilon_out/pilon.changes
+Writing updated scaffold_47_pilon to Pilon_out/pilon.fasta
+Writing scaffold_48:1-6788 changes to Pilon_out/pilon.changes
+Writing updated scaffold_48_pilon to Pilon_out/pilon.fasta
+Writing scaffold_49:1-6021 changes to Pilon_out/pilon.changes
+Writing updated scaffold_49_pilon to Pilon_out/pilon.fasta
+Writing scaffold_50:1-5034 changes to Pilon_out/pilon.changes
+Writing updated scaffold_50_pilon to Pilon_out/pilon.fasta
+Writing scaffold_51:1-4351 changes to Pilon_out/pilon.changes
+Writing updated scaffold_51_pilon to Pilon_out/pilon.fasta
+Writing scaffold_52:1-4321 changes to Pilon_out/pilon.changes
+Writing updated scaffold_52_pilon to Pilon_out/pilon.fasta
+Writing scaffold_53:1-4244 changes to Pilon_out/pilon.changes
+Writing updated scaffold_53_pilon to Pilon_out/pilon.fasta
+Writing scaffold_54:1-3301 changes to Pilon_out/pilon.changes
+Writing updated scaffold_54_pilon to Pilon_out/pilon.fasta
+Writing scaffold_55:1-3082 changes to Pilon_out/pilon.changes
+Writing updated scaffold_55_pilon to Pilon_out/pilon.fasta
+Writing scaffold_56:1-2871 changes to Pilon_out/pilon.changes
+Writing updated scaffold_56_pilon to Pilon_out/pilon.fasta
+Writing scaffold_57:1-4710 changes to Pilon_out/pilon.changes
+Writing updated scaffold_57_pilon to Pilon_out/pilon.fasta
+Writing scaffold_58:1-2558 changes to Pilon_out/pilon.changes
+Writing updated scaffold_58_pilon to Pilon_out/pilon.fasta
+Writing scaffold_59:1-2431 changes to Pilon_out/pilon.changes
+Writing updated scaffold_59_pilon to Pilon_out/pilon.fasta
+Writing scaffold_60:1-1989 changes to Pilon_out/pilon.changes
+Writing updated scaffold_60_pilon to Pilon_out/pilon.fasta
+Writing scaffold_61:1-1861 changes to Pilon_out/pilon.changes
+Writing updated scaffold_61_pilon to Pilon_out/pilon.fasta
+Writing scaffold_62:1-1836 changes to Pilon_out/pilon.changes
+Writing updated scaffold_62_pilon to Pilon_out/pilon.fasta
+Writing scaffold_63:1-1345 changes to Pilon_out/pilon.changes
+Writing updated scaffold_63_pilon to Pilon_out/pilon.fasta
+Writing scaffold_64:1-1255 changes to Pilon_out/pilon.changes
+Writing updated scaffold_64_pilon to Pilon_out/pilon.fasta
+Writing scaffold_65:1-1133 changes to Pilon_out/pilon.changes
+Writing updated scaffold_65_pilon to Pilon_out/pilon.fasta
+Writing scaffold_66:1-1103 changes to Pilon_out/pilon.changes
+Writing updated scaffold_66_pilon to Pilon_out/pilon.fasta
+Writing scaffold_67:1-744 changes to Pilon_out/pilon.changes
+Writing updated scaffold_67_pilon to Pilon_out/pilon.fasta
+Writing scaffold_68:1-633 changes to Pilon_out/pilon.changes
+Writing updated scaffold_68_pilon to Pilon_out/pilon.fasta
+Writing scaffold_69:1-604 changes to Pilon_out/pilon.changes
+Writing updated scaffold_69_pilon to Pilon_out/pilon.fasta
+Writing scaffold_70:1-542 changes to Pilon_out/pilon.changes
+Writing updated scaffold_70_pilon to Pilon_out/pilon.fasta
+Writing scaffold_71:1-529 changes to Pilon_out/pilon.changes
+Writing updated scaffold_71_pilon to Pilon_out/pilon.fasta
+Writing scaffold_72:1-419 changes to Pilon_out/pilon.changes
+Writing updated scaffold_72_pilon to Pilon_out/pilon.fasta
+Writing scaffold_73:1-409 changes to Pilon_out/pilon.changes
+Writing updated scaffold_73_pilon to Pilon_out/pilon.fasta
+Writing scaffold_74:1-337 changes to Pilon_out/pilon.changes
+Writing updated scaffold_74_pilon to Pilon_out/pilon.fasta
+Writing scaffold_75:1-282 changes to Pilon_out/pilon.changes
+Writing updated scaffold_75_pilon to Pilon_out/pilon.fasta
+Writing scaffold_76:1-239 changes to Pilon_out/pilon.changes
+Writing updated scaffold_76_pilon to Pilon_out/pilon.fasta
+Writing scaffold_77:1-231 changes to Pilon_out/pilon.changes
+Writing updated scaffold_77_pilon to Pilon_out/pilon.fasta
+Writing scaffold_78:1-222 changes to Pilon_out/pilon.changes
+Writing updated scaffold_78_pilon to Pilon_out/pilon.fasta
+Writing scaffold_79:1-212 changes to Pilon_out/pilon.changes
+Writing updated scaffold_79_pilon to Pilon_out/pilon.fasta
+Writing scaffold_80:1-190 changes to Pilon_out/pilon.changes
+Writing updated scaffold_80_pilon to Pilon_out/pilon.fasta
+Writing scaffold_81:1-184 changes to Pilon_out/pilon.changes
+Writing updated scaffold_81_pilon to Pilon_out/pilon.fasta
+Writing scaffold_82:1-167 changes to Pilon_out/pilon.changes
+Writing updated scaffold_82_pilon to Pilon_out/pilon.fasta
+Writing scaffold_83:1-164 changes to Pilon_out/pilon.changes
+Writing updated scaffold_83_pilon to Pilon_out/pilon.fasta
+Writing scaffold_84:1-161 changes to Pilon_out/pilon.changes
+Writing updated scaffold_84_pilon to Pilon_out/pilon.fasta
+Writing scaffold_85:1-156 changes to Pilon_out/pilon.changes
+Writing updated scaffold_85_pilon to Pilon_out/pilon.fasta
+Writing scaffold_86:1-146 changes to Pilon_out/pilon.changes
+Writing updated scaffold_86_pilon to Pilon_out/pilon.fasta
+Writing scaffold_87:1-136 changes to Pilon_out/pilon.changes
+Writing updated scaffold_87_pilon to Pilon_out/pilon.fasta
+Writing scaffold_88:1-135 changes to Pilon_out/pilon.changes
+Writing updated scaffold_88_pilon to Pilon_out/pilon.fasta
+Writing scaffold_89:1-134 changes to Pilon_out/pilon.changes
+Writing updated scaffold_89_pilon to Pilon_out/pilon.fasta
+Writing scaffold_90:1-128 changes to Pilon_out/pilon.changes
+Writing updated scaffold_90_pilon to Pilon_out/pilon.fasta
+Writing scaffold_91:1-126 changes to Pilon_out/pilon.changes
+Writing updated scaffold_91_pilon to Pilon_out/pilon.fasta
+Writing scaffold_92:1-124 changes to Pilon_out/pilon.changes
+Writing updated scaffold_92_pilon to Pilon_out/pilon.fasta
+Writing scaffold_93:1-123 changes to Pilon_out/pilon.changes
+Writing updated scaffold_93_pilon to Pilon_out/pilon.fasta
+Writing scaffold_94:1-123 changes to Pilon_out/pilon.changes
+Writing updated scaffold_94_pilon to Pilon_out/pilon.fasta
+Writing scaffold_95:1-123 changes to Pilon_out/pilon.changes
+Writing updated scaffold_95_pilon to Pilon_out/pilon.fasta
+Writing scaffold_96:1-122 changes to Pilon_out/pilon.changes
+Writing updated scaffold_96_pilon to Pilon_out/pilon.fasta
+Writing scaffold_97:1-122 changes to Pilon_out/pilon.changes
+Writing updated scaffold_97_pilon to Pilon_out/pilon.fasta
+Writing scaffold_98:1-121 changes to Pilon_out/pilon.changes
+Writing updated scaffold_98_pilon to Pilon_out/pilon.fasta
+Writing scaffold_99:1-121 changes to Pilon_out/pilon.changes
+Writing updated scaffold_99_pilon to Pilon_out/pilon.fasta
+Writing scaffold_100:1-121 changes to Pilon_out/pilon.changes
+Writing updated scaffold_100_pilon to Pilon_out/pilon.fasta
+Writing scaffold_101:1-120 changes to Pilon_out/pilon.changes
+Writing updated scaffold_101_pilon to Pilon_out/pilon.fasta
+Writing scaffold_102:1-120 changes to Pilon_out/pilon.changes
+Writing updated scaffold_102_pilon to Pilon_out/pilon.fasta
+Writing scaffold_103:1-120 changes to Pilon_out/pilon.changes
+Writing updated scaffold_103_pilon to Pilon_out/pilon.fasta
+Writing scaffold_104:1-120 changes to Pilon_out/pilon.changes
+Writing updated scaffold_104_pilon to Pilon_out/pilon.fasta
+Writing scaffold_105:1-120 changes to Pilon_out/pilon.changes
+Writing updated scaffold_105_pilon to Pilon_out/pilon.fasta
+Mean frags coverage: 43
+Mean total coverage: 43
