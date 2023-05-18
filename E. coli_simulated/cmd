@@ -35,7 +35,7 @@ misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f MisasmReg
 misClas_Pilon
 cat misassemblies_Pilon | grep "fix" | grep ":" | cut -d ":" -f 2,3 | awk '{split($1,a,":");split(a[2],b,"-");print a[1]"\t"b[1]"\t"b[2]}' > PilonRaw
 filterOverlapReg.py PilonRaw scaffold.fa.fai > PilonReg
-misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f MisasmReg
+misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f misclas.py -r scaffold.fa -b ecoli_50x_idba_sorted.bam -f PilonReg
 
 misClas_REAPR
 cat misassemblies_REAPR | grep "Error" | awk '{print $1"\t"$4"\t"$5}' > REAPRaw   || cat misassemblies_REAPR | grep "Error" | grep -v "Frag_cov" | awk '{print $1"\t"$4"\t"$5}'
