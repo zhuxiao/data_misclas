@@ -1,7 +1,7 @@
 # Misassembly clustering Results for misClus Experiments
 
 ## Prerequisites
-#### Install tools:
+#### Installation
 
 ```bash
 # Debian / Ubuntu:
@@ -33,28 +33,48 @@ $ cd bwa
 $ make
 ```
 
-misassembly detection tools 
+We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads.
 
 ```bash
 # misasm
 $ git clone https://github.com/zhuxiao/misasm.git
 $ cd misasm/src/
 $ make
+```
 
+And the binary file `misasm` will be output into the folder bin in this package directory.
+
+We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads.
+
+```bash
 # misfinder 
 $ git clone https://github.com/zhuxiao/misFinder.git
 $ cd misFinder
 $ ./autogen.sh
+```
 
+And the binary file `mf` will be output into the folder bin in this package directory.
+
+We used [pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.
+
+```
 # Pilon 
 $ wget -c https://github.com/broadinstitute/pilon/releases/download/v1.24/pilon-1.24.jar
+```
+
+And the jar file `pilon` will be download in this package directory.
+
+[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.
+
+```
 
 #Quast 
 $ wget -c https://github.com/ablab/quast/releases/download/quast_5.2.0/quast-5.2.0.tar.gz
 $ tar -zvxf quast-5.2.0.tar.gz
 $ cd quast-5.2.0
-$ ./setup.py 
 ```
+
+And the python file `quast.py` will be put in this package directory.
 
 ## Experiments
 
@@ -115,8 +135,6 @@ $ filterOverlapReg.py QUASTraw scaffold.fa.fai QUASTreg
 # Misassembly clustering
 $ misclus misFindeReg scaffold.fa E.coli_sorted.bam
 ```
-
-
 
 ####  Schizosaccharomyces pombe
 
