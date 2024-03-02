@@ -14,8 +14,6 @@ $ sudo apt install mlpack-bin g++ python3 autoconf automake libtool samtools ope
 $ sudo yum install gcc-c++ python3 autoconf automake libtool samtools java-11-openjkd-devel
 ```
 
- htslib (1.9 version or later)  and  bwa be installed from source files (it cannot be install by apt install or yum install)
-
 ```bash
 # htslib
 $ wget -c https://github.com/samtools/htslib/releases/download/1.19.1/htslib-1.19.1.tar.bz2
@@ -33,7 +31,7 @@ $ cd bwa
 $ make
 ```
 
-We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads.
+ htslib (1.9 version or later)  and  bwa be installed from source files (it cannot be installed by `apt install` or `yum install`)
 
 ```bash
 # misasm
@@ -44,8 +42,6 @@ $ make
 
 And the binary file `misasm` will be output into the folder bin in this package directory.
 
-We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads.
-
 ```bash
 # misfinder 
 $ git clone https://github.com/zhuxiao/misFinder.git
@@ -55,8 +51,6 @@ $ ./autogen.sh
 
 And the binary file `mf` will be output into the folder bin in this package directory.
 
-We used [pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.
-
 ```
 # Pilon 
 $ wget -c https://github.com/broadinstitute/pilon/releases/download/v1.24/pilon-1.24.jar
@@ -64,10 +58,7 @@ $ wget -c https://github.com/broadinstitute/pilon/releases/download/v1.24/pilon-
 
 And the jar file `pilon` will be download in this package directory.
 
-[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.
-
 ```
-
 #Quast 
 $ wget -c https://github.com/ablab/quast/releases/download/quast_5.2.0/quast-5.2.0.tar.gz
 $ tar -zvxf quast-5.2.0.tar.gz
@@ -87,7 +78,6 @@ $ prefetch SRR12717904
 $ fasterq-dump --split-files SRR12717904.sra
 $ fq2fa --merge SRR12717904_1.fq SRR12717904_2.fq SRR12717904.fa
 $ idba_ud --mink 20 --maxk 120 --min_contig 1000 --num_threads 8 -r SRR12717904.fa -o ecoli_idba_out
-spades
 # Align paired-end reads onto contigs
 $ cd ecoli_idba_out
 $ bwa index scaffold.fa
@@ -96,6 +86,8 @@ $ samtools view -b -S -@ 8 E.coli.sam > E.coli.bam
 $ samtools sort -@ 8 E.coli.bam -o E.coli_sorted.bam
 $ samtools index -@ 8 E.coli_sorted.bam E.coli_sorted.bai
 ```
+
+#We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
 
 ```bash
 # misasm candidate misassemblies 
@@ -107,6 +99,10 @@ $ filterOverlapReg.py MisasmRaw scaffold.fa.fai MisasmReg
 $ misclus MisasmReg scaffold.fa E.coli_sorted.bam
 ```
 
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+
 ```bash
 # misfinder candidate misassemblies  
 $ mf all -t 8 -o output config 
@@ -117,6 +113,10 @@ $ filterOverlapReg.py misFindeRaw scaffold.fa.fai misFindeReg
 $ misclus misFindeReg scaffold.fa E.coli_sorted.bam
 ```
 
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#We used [pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+
 ```bash
 # Pilon candidate misassemblies
 $ java -jar pilon --genome scaffold.fa --frags S.pombe_sorted.bam --changes > misassemblies_Pilon
@@ -125,6 +125,10 @@ $ filterOverlapReg.py PilonRaw scaffold.fa.fai PilonReg
 # Misassembly clustering
 $ misclus PilonReg scaffold.fa E.coli_sorted.bam
 ```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Quast candidate misassemblies
@@ -135,6 +139,8 @@ $ filterOverlapReg.py QUASTraw scaffold.fa.fai QUASTreg
 # Misassembly clustering
 $ misclus misFindeReg scaffold.fa E.coli_sorted.bam
 ```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
 ####  Schizosaccharomyces pombe
 
@@ -154,6 +160,8 @@ $ samtools sort -@ 8 S.pombe.bam -o S.pombe_sorted.bam
 $ samtools index -@ 8 S.pombe_sorted.bam S.pombe_sorted.bai
 ```
 
+#We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+
 ```bash
 # misasm candidate misassemblies
 $ misasm scaffold.fa S.pombe_sorted.bam
@@ -164,6 +172,10 @@ $ filterOverlapReg.py MisasmRaw scaffold.fa.fai MisasmReg
 #Misassembly clustering
 $ misclus MisasmReg scaffold.fa S.pombe_sorted.bam
 ```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
 
 ```bash
 # misfinder candidate misassemblies  
@@ -176,6 +188,10 @@ $ misclus misFindeReg scaffold.fa S.pombe_sorted.bam
 $ cat result_errors | awk '{print $1"\t"$3"\t"$4}' > misFindeRaw
 ```
 
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#We used [pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+
 ```bash
 # Pilon candidate misassemblies
 $ java -jar pilon --genome scaffold.fa --frags S.pombe_sorted.bam --changes > misassemblies_Pilon
@@ -185,6 +201,10 @@ $ filterOverlapReg.py PilonRaw scaffold.fa.fai PilonReg
 $ misclus PilonReg scaffold.fa S.pombe_sorted.bam
 ```
 
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+
 ```bash
 # Quast candidate misassemblies
 $ quast.py -r GCF_000002945.1_ASM294v2_genomic.fa --extensive-mis-size 200 scaffold.fa -m 1000
@@ -193,6 +213,80 @@ $ extractQUASTreg.py misassemblies_QUAST > QUASTraw
 $ filterOverlapReg.py QUASTraw scaffold.fa.fai QUASTreg
 # Misassembly clustering
 $ misclus misFindeReg scaffold.fa S.pombe_sorted.bam
+```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#### Homosapiens chromosome 14 data
+
+```bash
+# Download  
+$ prefetch SRR12023512
+# Assemble paired-end reads to contigs
+$ fasterq-dump --split-files SRR12023512.sra
+$ fq2fa --merge SRR12023512_1.fq SRR12023512_2.fq SRR12023512.fa
+$ idba_ud --mink 20 --maxk 120 --min_contig 1000 --num_threads 8 -r SRR12023512.fa -o chr14_out
+# Align paired-end reads onto contigs
+$ cd chr14_out
+$ bwa index scaffold.fa
+$ bwa mem -t 8 scaffold.fa SRR12023512_1.fastq SRR12023512_2.fastq > chr14.sam
+$ samtools view -b -S -@ 8 chr14.sam > chr14.bam
+$ samtools sort -@ 8 chr14.bam -o chr14.bam
+$ samtools index -@ 8 chr14_sorted.bam chr14_sorted.bai
+```
+
+#We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+
+```bash
+# misasm candidate misassemblies
+$ misasm scaffold.fa chr14_sorted.bam
+$ cd output
+# Classify misassemblies
+$ cat genome_Indel genome_Misjoin | awk '{split($1,a,":"); split(a[2],b,"-");print a[1]"\t"b[1]"\t"b[2]}' > MisasmRaw
+$ filterOverlapReg.py MisasmRaw scaffold.fa.fai MisasmReg
+#Misassembly clustering
+$ misclus MisasmReg scaffold.fa S.pombe_sorted.bam
+```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+
+```bash
+# misfinder candidate misassemblies  
+$ mf all -t 8 -o output config 
+$ cd output
+$ cat misassemblies_misFinder | awk '{print $1"\t"$3"\t"$4}' > misFindeRaw
+$ filterOverlapReg.py misFindeRaw scaffold.fa.fai misFindeReg
+# Misassembly clustering
+$ misclus misFindeReg scaffold.fa chr14_sorted.bam
+```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#We used [pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+
+```bash
+# Pilon candidate misassemblies
+$ java -jar pilon --genome scaffold.fa --frags S.chr14_sorted.bam --changes > misassemblies_Pilon
+$ cat misassemblies_Pilon | grep "fix" | grep ":" | cut -d ":" -f 2,3 | awk '{split($1,a,":");split(a[2],b,"-");print a[1]"\t"b[1]"\t"b[2]}' > PilonRaw
+$ filterOverlapReg.py PilonRaw scaffold.fa.fai PilonReg
+# Misassembly clustering
+$ misclus PilonReg scaffold.fa chr14_sorted.bam
+```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+#[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+
+```bash
+# Quast candidate misassemblies
+$ quast.py -r NC_000014.9.fa --extensive-mis-size 200 scaffold.fa -m 1000
+$ cd ./quast_result/latest
+$ extractQUASTreg.py misassemblies_QUAST > QUASTraw
+$ filterOverlapReg.py QUASTraw scaffold.fa.fai QUASTreg
+# Misassembly clustering
+$ misclus misFindeReg scaffold.fa chr14_sorted.bam
 ```
 
 
@@ -245,9 +339,9 @@ $ misclus misFindeReg scaffold.fa hg002_sorted.bam
 
 
 
-## Result
+## Results
 
-Typically, evaluation results are saved within [zhuxiao/misclus-experiments: Data used in misClus experiments (github.com)](https://github.com/zhuxiao/misclus-experiments), with each tool's results saved in the subfolder named after the respective tool. 
+Evaluation results are saved within this repository with each tool's results saved in the subfolder named after the respective tool. 
 
 ## Contact ##
 
