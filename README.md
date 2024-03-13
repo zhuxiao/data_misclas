@@ -11,7 +11,7 @@ $ sudo apt install mlpack-bin g++ python3 autoconf automake libtool samtools ope
 
 ```bash
 # RedHat / CentOS:
-$ sudo yum install gcc-c++ python3 autoconf automake libtool samtools java-11-openjkd-devel
+$ sudo yum install gcc-c++ python3 autoconf automake libtool samtools java-11-openjdk-devel
 ```
 
 ```bash
@@ -115,7 +115,7 @@ $ misclus misFindeReg scaffold.fa E.coli_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+#We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Pilon candidate misassemblies
@@ -190,7 +190,7 @@ $ cat result_errors | awk '{print $1"\t"$3"\t"$4}' > misFindeRaw
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+#We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Pilon candidate misassemblies
@@ -264,7 +264,7 @@ $ misclus misFindeReg scaffold.fa chr14_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+#We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Pilon candidate misassemblies
