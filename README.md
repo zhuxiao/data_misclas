@@ -87,7 +87,7 @@ $ samtools sort -@ 8 E.coli.bam -o E.coli_sorted.bam
 $ samtools index -@ 8 E.coli_sorted.bam E.coli_sorted.bai
 ```
 
-#We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
 
 ```bash
 # misasm candidate misassemblies 
@@ -101,7 +101,7 @@ $ misclus MisasmReg scaffold.fa E.coli_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
 
 ```bash
 # misfinder candidate misassemblies  
@@ -115,7 +115,7 @@ $ misclus misFindeReg scaffold.fa E.coli_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Pilon candidate misassemblies
@@ -128,7 +128,7 @@ $ misclus PilonReg scaffold.fa E.coli_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Quast candidate misassemblies
@@ -160,7 +160,7 @@ $ samtools sort -@ 8 S.pombe.bam -o S.pombe_sorted.bam
 $ samtools index -@ 8 S.pombe_sorted.bam S.pombe_sorted.bai
 ```
 
-#We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
 
 ```bash
 # misasm candidate misassemblies
@@ -175,7 +175,7 @@ $ misclus MisasmReg scaffold.fa S.pombe_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
 
 ```bash
 # misfinder candidate misassemblies  
@@ -190,7 +190,7 @@ $ cat result_errors | awk '{print $1"\t"$3"\t"$4}' > misFindeRaw
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Pilon candidate misassemblies
@@ -203,7 +203,7 @@ $ misclus PilonReg scaffold.fa S.pombe_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Quast candidate misassemblies
@@ -235,7 +235,7 @@ $ samtools sort -@ 8 chr14.bam -o chr14.bam
 $ samtools index -@ 8 chr14_sorted.bam chr14_sorted.bai
 ```
 
-#We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
 
 ```bash
 # misasm candidate misassemblies
@@ -250,7 +250,7 @@ $ misclus MisasmReg scaffold.fa S.pombe_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+We used [misfinder](https://github.com/zhuxiao/misFinder) to identify mis-assemblies in an unbiased manner using reference and paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
 
 ```bash
 # misfinder candidate misassemblies  
@@ -264,7 +264,7 @@ $ misclus misFindeReg scaffold.fa chr14_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Pilon candidate misassemblies
@@ -277,7 +277,7 @@ $ misclus PilonReg scaffold.fa chr14_sorted.bam
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
 
-#[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
 
 ```bash
 # Quast candidate misassemblies
