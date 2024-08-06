@@ -187,6 +187,8 @@ $ samtools sort simulated_Spombe.bam -o simulated_Spombe_sorted.bam
 $ samtools index -@ 8 simulated_Spombe_sorted.bam simulated_Spombe_sorted.bai
 ```
 
+Randomly select a subset of loci from the VCF file to create a region file for evaluating misclus.
+
 ```bash
 #misassemble clustering
 $ misclus simulateReg ref_Spombe.fa simulate_Spombe_sorted.bam
@@ -228,7 +230,7 @@ $ mason_simulator --num-threads 16 -ir hg38.fa \
                 --illumina-read-length 150 \	
 ```
 
-We align paired-end simulated reads onto contigs ,the assembled contigs were simulated by the simulated human genome .
+We align paired-end simulated reads onto contigs ,the assembled contigs were simulated by the simulated human genome.
 
 ```bash
 $ bwa mem -t 8 hg38.fa left_reads.fq right_reads.fq > simulated_hg38.sam
@@ -237,13 +239,7 @@ $ samtools sort simulated_hg38.bam -o simulated_hg38_sorted.bam
 $ samtools index -@ 8 simulated_hg38_sorted.bam simulated_hg38_sorted.bai
 ```
 
-regionfile ???
-
-```bash
-#Randomly select a subset of loci from the VCF file to create a region file for evaluating misclus
-```
-
-misclus cluster
+Randomly select a subset of loci from the VCF file to create a region file for evaluating misclus.
 
 ```bash
 #misassemble clustering
