@@ -187,7 +187,7 @@ $ samtools sort simulated_Spombe.bam -o simulated_Spombe_sorted.bam
 $ samtools index -@ 8 simulated_Spombe_sorted.bam simulated_Spombe_sorted.bai
 ```
 
-Randomly select a subset of loci from the VCF file to create a region file for evaluating misclus.
+We randomly select a subset of loci from the VCF file to create a region file for evaluating misclus.
 
 ```bash
 #misassemble clustering
@@ -195,6 +195,62 @@ $ misclus simulateReg ref_Spombe.fa simulate_Spombe_sorted.bam
 ```
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+####  HG002 
+
+```bash
+# Download  HG002-NYGC-NovaSeq-2x250.
+$ prefetch SRR11321732
+# Assemble paired-end reads to contigs
+$ fasterq-dump --split-files SRR11321732.sra
+$ masurca -t 32 -i SRR11321732_1.fastq,SRR11321732_2.fastq -o SRR11321732_masurca
+# Align paired-end reads onto contigs
+$ cd SRR11321732_masurca
+$ bwa index scaffold.fa
+$ bwa mem -t 8 scaffold.fa SRR11321732_1.fastq SRR11321732_2.fastq > masurca.hg002.sam
+$ samtools view -b -S -@ 8 hg002.sam > hg002.bam
+$ samtools sort -@ 8 hg002.bam -o hg002_sorted.bam
+$ samtools index -@ 8 hg002_sorted.bam hg002_sorted.bai
+```
+
+We used [misasm](https://github.com/zhuxiao/misasm) to detect misassemblies based on paired-end reads and used `misclus` to  analyze assembly errors in the misassembly regions.
+
+```bash
+# misasm candidate misassemblies
+$ misasm scaffold.fa hg002_sorted.bam
+# Classify misassemblies
+$ cat genome_Indel genome_Misjoin | awk '{split($1,a,":"); split(a[2],b,"-");print a[1]"\t"b[1]"\t"b[2]}' > MisasmRaw
+$ filterOverlapReg.py MisasmRaw scaffold.fa.fai MisasmReg
+#Misassembly clustering
+$ misclus MisasmReg scaffold.fa $ misclus MisasmReg scaffold.fa hg002_sorted.bam 
+```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+We used [Pilon](https://github.com/broadinstitute/pilon) to read alignment analysis to identify inconsistencies between the input genome and the evidence in the reads.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+
+```bash
+# Pilon candidate misassemblies ？
+$ java -jar pilon --genome scaffold.fa --frags S.pombe_sorted.bam --changes > misassemblies_Pilon
+$ cat misassemblies_Pilon | grep "fix" | grep ":" | cut -d ":" -f 2,3 | awk '{split($1,a,":");split(a[2],b,"-");print a[1]"\t"b[1]"\t"b[2]}' > PilonRaw
+$ filterOverlapReg.py PilonRaw scaffold.fa.fai PilonReg
+# Misassembly clustering
+$ misclus PilonReg scaffold.fa hg002_sorted.bam
+```
+
+The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+[Quast](https://github.com/ablab/quast) is used to evaluates genome/metagenome assemblies by computing various metrics.We then clustered the misassembly regions using misclus  to determine if the intervals included assembly errors.
+
+```bash
+# Quast candidate misassemblies
+$ quast.py -r hs38.fa --extensive-mis-size 200 scaffold.fa -m 1000
+$ cd ./quast_result/latest
+$ extractQUASTreg.py misassemblies_QUAST > QUASTraw
+$ filterOverlapReg.py QUASTraw scaffold.fa.fai QUASTreg
+# Misassembly clustering
+$ misclus misFindeReg scaffold.fa hg002_sorted.bam
+```
 
 #### Simulate GRCh38 data
 
@@ -239,7 +295,7 @@ $ samtools sort simulated_hg38.bam -o simulated_hg38_sorted.bam
 $ samtools index -@ 8 simulated_hg38_sorted.bam simulated_hg38_sorted.bai
 ```
 
-Randomly select a subset of loci from the VCF file to create a region file for evaluating misclus.
+We randomly select a subset of loci from the VCF file to create a region file for evaluating misclus.
 
 ```bash
 #misassemble clustering
@@ -247,6 +303,8 @@ $ misclus simulateReg ref_Spombe.fa simulate_Spombe_sorted.bam
 ```
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
+
+
 
 ## Results
 
