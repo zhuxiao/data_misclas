@@ -221,7 +221,7 @@ $ misasm scaffold.fa hg002_sorted.bam
 # Classify misassemblies
 $ cat genome_Indel genome_Misjoin | awk '{split($1,a,":"); split(a[2],b,"-");print a[1]"\t"b[1]"\t"b[2]}' > MisasmRaw
 $ filterOverlapReg.py MisasmRaw scaffold.fa.fai MisasmReg
-#Misassembly clustering
+# Misassembly clustering
 $ misclus MisasmReg scaffold.fa $ misclus MisasmReg scaffold.fa hg002_sorted.bam 
 ```
 
@@ -298,7 +298,7 @@ $ samtools index -@ 8 simulated_hg38_sorted.bam simulated_hg38_sorted.bai
 We randomly select a subset of loci from the VCF file to create a region file for evaluating misclus.
 
 ```bash
-#misassemble clustering
+# misassemble clustering
 $ misclus simulateReg ref_Spombe.fa simulate_Spombe_sorted.bam
 ```
 
