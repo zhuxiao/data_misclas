@@ -274,16 +274,16 @@ We used Mason2 to generate the answer VCF file based on the Homosapiens chromoso
 
 ```bash
 $ mason_simulator --num-threads 16 -ir hg38.fa \
-                -n 320000000 \
-                -iv simulate_hg38.vcf \
-                -o left_reads_2.fq \
-                -or right_reads_2.fq \
-                --fragment-size-model normal \
-                --fragment-mean-size 450 \
-                --fragment-size-std-dev 50 \
-                --seq-technology illumina \
-                --seq-mate-orientation FR \
-                --illumina-read-length 150 \	
+        -n 320000000 \
+        -iv simulate_hg38.vcf \
+        -o left_reads_2.fq \
+        -or right_reads_2.fq \
+        --fragment-size-model normal \
+        --fragment-mean-size 450 \
+        --fragment-size-std-dev 50 \
+        --seq-technology illumina \
+        --seq-mate-orientation FR \
+        --illumina-read-length 150 \	
 ```
 
 We align paired-end simulated reads onto contigs ,the assembled contigs were simulated by the simulated human genome.
