@@ -150,7 +150,7 @@ To benchmark the evaluation accuracy of misclus, we used a simulated Schizosacch
 
 ```bash
 $ /home/jlgao/hxliu/tools/mason2-2.0.9-Linux-x86_64/bin/mason_variator 
-        -ir GCF_000002945.1_ASM294v2_genomic.fa 
+        -ir GCF_000002945.1_ASM294v2_genomic.fa \
         -ov simulate_Spombe.vcf \
         --snp-rate 0 \
         --small-indel-rate 0.00001 \
@@ -299,7 +299,7 @@ We randomly select a subset of loci from the VCF file to create a region file fo
 
 ```bash
 # misassemble clustering
-$ misclus simulateReg ref_Spombe.fa simulate_Spombe_sorted.bam
+$ misclus simulateReg hg38.fa simulated_hg38_sorted.bam
 ```
 
 The analysis results are saved in the `final_result` file in the `cluster_result` folder.
