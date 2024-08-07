@@ -149,8 +149,8 @@ The analysis results are saved in the `final_result` file in the `cluster_result
 To benchmark the evaluation accuracy of misclus, we used a simulated Schizosaccharomyces pombe assembly containing both structural and small-scale assembly errors.
 
 ```bash
-$ /home/jlgao/hxliu/tools/mason2-2.0.9-Linux-x86_64/bin/mason_variator \
-		-ir GCF_000002945.1_ASM294v2_genomic.fa 
+$ /home/jlgao/hxliu/tools/mason2-2.0.9-Linux-x86_64/bin/mason_variator 
+        -ir GCF_000002945.1_ASM294v2_genomic.fa 
         -ov simulate_Spombe.vcf \
         --snp-rate 0 \
         --small-indel-rate 0.00001 \
@@ -258,7 +258,7 @@ To benchmark the evaluation accuracy of misclus, we used a simulated human whole
 
 ```bash
 $ /home/jlgao/hxliu/tools/mason2-2.0.9-Linux-x86_64/bin/mason_variator \
-		-ir hg38.fa 
+        -ir hg38.fa \
         -ov simulate_hg38.vcf \
         --snp-rate 0 \
         --small-indel-rate 0.000005 \
